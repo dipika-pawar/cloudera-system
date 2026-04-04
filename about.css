@@ -292,7 +292,7 @@ body {
     justify-content: center;
     overflow: hidden;
     padding-top: 50px;
-    padding-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 #canvas-container {
