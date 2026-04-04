@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudEra System | Compact Sidebar</title>
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+   <nav class="top-navbar" id="topNav">
+        <div class="container">
+            <div class="logo-box">
+                <img src="Images/logo.png" alt="CloudEra Logo" class="main-logo">
+                <span class="brand-name">CloudEra <span class="purple-txt">System</span></span>
+            </div>
+            <ul class="desktop-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="#" class="quote-btn">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="floating-trigger" id="scrollToggle">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="side-drawer" id="sideMenu">
+        <div class="drawer-header">
+            <div class="drawer-logo-box">
+                <img src="Images/logo.png" alt="Logo" class="sidebar-logo">
+                <div class="drawer-brand">
+                    <span class="name">CloudEra</span>
+                    <span class="sub-name">System</span>
+                </div>
+            </div>
+            <div class="close-btn" id="closeMenu">&times;</div>
+        </div>
+
+        <ul class="drawer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="drawer-footer">
+            <a href="#" class="quote-btn sidebar-btn">Get a Free Quote</a>
+        </div>
+    </div>
+
+
+    <!-- =========================
+    about-hero
+    ========================= -->
+
+    <section class="about-hero">
+        <div id="canvas-container"></div>
+
+        <div class="hero-content">
+            <h3 class="sub-heading">About CloudEra System</h3>
+            <h1 class="main-title">Empowering Businesses with <span class="gradient-text">Smart IT Solutions</span></h1>
+
+            <p class="hero-desc">
+                CloudEra System is a growing IT company focused on delivering innovative, secure, and scalable
+                technology solutions. Our team works with modern tools to build high-quality digital products that help
+                businesses succeed in the digital world.
+            </p>
+
+            <div class="hero-btns">
+                <a href="contact.html" class="btn-primary">Get Started</a>
+                <a href="services.html" class="btn-secondary">Our Services</a>
+            </div>
+        </div>
+
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- =========================
+    about-hero
+    ========================= -->
+
+    <!-- =========================
+    story-section
+    ========================= -->
+
+    <section class="vision-story-section">
+    <div class="vision-wrapper">
+        <div class="content-header" data-aos="fade-down">
+            <h3 class="vision-tag">Our Story</h3>
+            <h2 class="vision-title">Building the Future with <span class="gradient-txt">CloudEra System</span></h2>
+        </div>
+
+        <div class="vision-grid">
+            <div class="vision-visual" data-aos="zoom-in">
+                <div id="vision-sphere-container"></div>
+                <div class="vision-glow"></div>
+            </div>
+
+            <div class="vision-content">
+                <div class="milestone-grid-internal">
+                    <div class="milestone-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="milestone-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <div class="milestone-info">
+                            <h4>The Genesis</h4>
+                            <p>Innovative IT solutions starting with creative ideas.</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="milestone-icon"><i class="fa-solid fa-code-merge"></i></div>
+                        <div class="milestone-info">
+                            <h4>Technical Mastery</h4>
+                            <p>Specializing in Web, Cloud, and API Integration.</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="milestone-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                        <div class="milestone-info">
+                            <h4>The Client Bridge</h4>
+                            <p>Building long-term partnerships through quality.</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="milestone-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <div class="milestone-info">
+                            <h4>Future Ready</h4>
+                            <p>Adopting the latest tools and frameworks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- =========================
+    story-section
+    ========================= -->
+
+    <!-- =========================
+    mission-vision
+    ========================= -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <section class="mv-premium-section">
+        <div id="cyber-mesh-container"></div>
+
+        <div class="mv-wrapper">
+            <div class="mv-glass-card mission-box">
+                <div class="neon-line"></div>
+                <div class="icon-3d-wrap blue-glow">
+                    <i class="fas fa-rocket floating-rocket"></i>
+                </div>
+                <h2>Our <span class="blue-text">Mission</span></h2>
+                <p>To deliver innovative, secure, and high-quality IT solutions that help businesses grow and succeed in
+                    the digital world. We aim to provide reliable services that improve efficiency and performance.</p>
+                <ul class="mv-list">
+                    <li><i class="fas fa-lightbulb pulse-blue"></i> Innovation & Creativity</li>
+                    <li><i class="fas fa-user-shield pulse-blue"></i> Advanced Security</li>
+                </ul>
+            </div>
+
+            <div class="mv-glass-card vision-box">
+                <div class="neon-line"></div>
+                <div class="icon-3d-wrap purple-glow">
+                    <i class="fas fa-eye vision-pulse"></i>
+                </div>
+                <h2>Our <span class="purple-text">Vision</span></h2>
+                <p>To become a trusted IT partner for businesses by creating modern digital solutions and adopting
+                    latest technologies. We strive for long-term relationships and continuous growth.</p>
+                <ul class="mv-list">
+                    <li><i class="fas fa-microchip pulse-purple"></i> Modern Technology</li>
+                    <li><i class="fas fa-infinity pulse-purple"></i> Continuous Innovation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+    mission-vision
+    ========================= -->
+
+    <!-- ========================
+    core-values
+    ======================== -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+
+    <section class="cloudera-values">
+        <div class="values-main-container">
+
+            <div class="values-header">
+                <h1 class="glow-title">Our <span class="moving-gradient">Core Values</span></h1>
+                <p class="values-intro">At CloudEra System, our values define our commitment to quality, trust, and
+                    long-term success.</p>
+            </div>
+
+            <div class="values-grid">
+
+                <div class="value-card" data-tilt>
+                    <div class="icon-sphere blue-glow"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Innovation</h3>
+                    <p>Modern technologies and creative ideas for future-ready solutions.</p>
+                </div>
+
+                <div class="value-card" data-tilt>
+                    <div class="icon-sphere purple-glow"><i class="fas fa-circle-check"></i></div>
+                    <h3>Quality</h3>
+                    <p>High-quality IT services meeting industry standards.</p>
+                </div>
+
+                <div class="value-card" data-tilt>
+                    <div class="icon-sphere blue-glow"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Integrity</h3>
+                    <p>Honesty and transparency in every project we handle.</p>
+                </div>
+
+                <div class="value-card" data-tilt>
+                    <div class="icon-sphere purple-glow"><i class="fas fa-smile-beam"></i></div>
+                    <h3>Customer Satisfaction</h3>
+                    <p>Our priority is delivering solutions that help your business grow.</p>
+                </div>
+
+                <div class="value-card" data-tilt>
+                    <div class="icon-sphere blue-glow"><i class="fas fa-server"></i></div>
+                    <h3>Reliability</h3>
+                    <p>Secure and dependable systems you can trust for success.</p>
+                </div>
+
+                <div class="value-card" data-tilt>
+                    <div class="icon-sphere purple-glow"><i class="fas fa-book-reader"></i></div>
+                    <h3>Continuous Learning</h3>
+                    <p>Adapting to new tools to provide the best IT solutions.</p>
+                </div>
+
+                <div class="value-card" data-tilt>
+                    <div class="icon-sphere blue-glow"><i class="fas fa-users-cog"></i></div>
+                    <h3>Teamwork</h3>
+                    <p>Strong collaboration leading to successful digital projects.</p>
+                </div>
+
+                <div class="value-card" data-tilt>
+                    <div class="icon-sphere purple-glow"><i class="fas fa-fingerprint"></i></div>
+                    <h3>Digital Security</h3>
+                    <p>Protecting data and ensuring the highest standards of safety for clients.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+    core-values
+    ======================== -->
+
+    <!-- ========================
+    why-choose
+    ======================== -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+
+    <section class="why-choose-section">
+        <div class="wc-container">
+            <div class="wc-content-box">
+                <h2 class="wc-heading">Why Choose <br><span class="cloudera-gradient">CloudEra System</span></h2>
+                <p class="wc-description">
+                    At CloudEra System, we are committed to delivering innovative and reliable IT solutions that help
+                    businesses grow in today’s digital world.
+                </p>
+            </div>
+
+            <div class="wc-cards-grid">
+                <div class="wc-card" data-tilt>
+                    <div class="wc-icon blue-glow"><i class="fas fa-user-tie"></i></div>
+                    <h3>Experienced IT Professionals</h3>
+                    <p>Skilled developers and experts building modern digital solutions.</p>
+                </div>
+
+                <div class="wc-card" data-tilt>
+                    <div class="wc-icon purple-glow"><i class="fas fa-layer-group"></i></div>
+                    <h3>Modern Technologies</h3>
+                    <p>Using cloud platforms and advanced development practices.</p>
+                </div>
+
+                <div class="wc-card" data-tilt>
+                    <div class="wc-icon purple-glow"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3>Custom Business Solutions</h3>
+                    <p>Tailored designs based on specific client requirements.</p>
+                </div>
+
+                <div class="wc-card" data-tilt>
+                    <div class="wc-icon blue-glow"><i class="fas fa-shield-virus"></i></div>
+                    <h3>Secure & Scalable Systems</h3>
+                    <p>Reliable applications capable of growing with your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+    why-choose
+    ======================== -->
+
+    <!-- ========================
+    founder
+    ======================== -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+
+    <section class="cloudera-ce-founder-wrapper">
+        <div class="cloudera-ce-main-header">
+            <h2 class="cloudera-ce-title">Meet Our <span class="cloudera-ce-gradient">Founder</span></h2>
+            <div class="cloudera-ce-line"></div>
+        </div>
+
+        <div class="cloudera-ce-flex-container">
+
+            <div class="cloudera-ce-bio-content">
+                <h3 class="cloudera-ce-bio-heading">Building the Future of <br>Cloud Solutions</h3>
+                <p class="cloudera-ce-bio-text">
+                    At CloudEra System, our founder's vision is to bridge the gap between complex technology and
+                    business growth. With a focus on innovation, we deliver high-end digital experiences.
+                </p>
+
+                <div class="cloudera-ce-info-grid">
+                    <div class="cloudera-ce-info-box">
+                        <i class="fas fa-microchip cloudera-ce-purple-glow"></i>
+                        <div class="cloudera-ce-box-txt">
+                            <h4>Tech Vision</h4>
+                            <p>Driving growth through AI and Cloud platforms.</p>
+                        </div>
+                    </div>
+                    <div class="cloudera-ce-info-box">
+                        <i class="fas fa-shield-halved cloudera-ce-blue-glow"></i>
+                        <div class="cloudera-ce-box-txt">
+                            <h4>Security First</h4>
+                            <p>Ensuring every solution is secure and reliable.</p>
+                        </div>
+                    </div>
+                    <div class="cloudera-ce-info-box">
+                        <i class="fas fa-gem cloudera-ce-purple-glow"></i>
+                        <div class="cloudera-ce-box-txt">
+                            <h4>Quality Focus</h4>
+                            <p>Delivering premium, high-end web experiences.</p>
+                        </div>
+                    </div>
+                    <div class="cloudera-ce-info-box">
+                        <i class="fas fa-globe cloudera-ce-blue-glow"></i>
+                        <div class="cloudera-ce-box-txt">
+                            <h4>Global Reach</h4>
+                            <p>Scaling businesses across digital boundaries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cloudera-ce-visual-wrap">
+                <div class="cloudera-ce-photo-card" data-tilt data-tilt-max="15" data-tilt-speed="400"
+                    data-tilt-glare="true">
+                    <div class="cloudera-ce-img-frame">
+                        <img src="Images/founder.jpg" alt="Founder" class="cloudera-ce-img">
+                    </div>
+                    <div class="cloudera-ce-details">
+                        <h3 class="cloudera-ce-f-name">Varun Sharma</h3>
+                        <p class="cloudera-ce-f-role">Founder & CEO, CloudEra System</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================
+    founder
+    ======================== -->
+
+    <!-- ========================
+    Company Achievements
+    ======================== -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+
+    <section class="cloudera-cn-section">
+        <div class="cloudera-cn-header">
+            <h2 class="cloudera-cn-main-title">Company <span class="cloudera-cn-gradient">Achievements</span></h2>
+            <div class="cloudera-cn-title-line"></div>
+        </div>
+
+        <div class="cloudera-cn-wrapper">
+            <svg class="cloudera-cn-svg-connector" viewBox="0 0 1200 400">
+                <path class="cloudera-cn-path" d="M150,200 Q300,50 450,200 T750,200 T1050,200" fill="none"
+                    stroke="url(#lineGradient)" stroke-width="2" stroke-dasharray="10,10" />
+                <defs>
+                    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#a03cbf" />
+                        <stop offset="100%" stop-color="#2b74ed" />
+                    </linearGradient>
+                </defs>
+            </svg>
+
+            <div class="cloudera-cn-nodes-container">
+                <div class="cloudera-cn-node" data-tilt>
+                    <div class="cloudera-cn-circle purple-br">
+                        <i class="fas fa-rocket"></i>
+                        <h3 class="cloudera-cn-num" data-target="500">50+</h3>
+                    </div>
+                    <p>Projects Completed</p>
+                </div>
+
+                <div class="cloudera-cn-node" data-tilt>
+                    <div class="cloudera-cn-circle blue-br">
+                        <i class="fas fa-handshake"></i>
+                        <h3 class="cloudera-cn-num" data-target="250">20+</h3>
+                    </div>
+                    <p>Happy Clients</p>
+                </div>
+
+                <div class="cloudera-cn-node" data-tilt>
+                    <div class="cloudera-cn-circle purple-br">
+                        <i class="fas fa-code"></i>
+                        <h3 class="cloudera-cn-num" data-target="20">10+</h3>
+                    </div>
+                    <p>Technologies Used</p>
+                </div>
+
+                <div class="cloudera-cn-node" data-tilt>
+                    <div class="cloudera-cn-circle blue-br">
+                        <i class="fas fa-users-gear"></i>
+                        <h3 class="cloudera-cn-num" data-target="50">8+</h3>
+                    </div>
+                    <p>Team Members</p>
+                </div>
+
+                <div class="cloudera-cn-node" data-tilt>
+                    <div class="cloudera-cn-circle purple-br">
+                        <i class="fas fa-award"></i>
+                        <h3 class="cloudera-cn-num" data-target="10">3+</h3>
+                    </div>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+    Company Achievements
+    ========================  -->
+
+    <!-- =====================
+footer
+===================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <footer class="main-footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="Images/logo.png" alt="CloudEra Logo" class="logo-img">
+                </div>
+                <p class="footer-desc">
+                    Delivering innovative IT solutions, modern technology services, and reliable digital products to
+                    help businesses grow and succeed in the digital world.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="col-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Technologies</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="col-title">Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Software Development</a></li>
+                    <li><a href="#">Mobile App Development</a></li>
+                    <li><a href="#">Cloud Solutions</a></li>
+                    <li><a href="#">API Integration</a></li>
+                    <li><a href="#">UI / UX Design</a></li>
+                    <li><a href="#">IT Consulting</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="col-title">Contact Us</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra, India</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 9876543210</p>
+                    <p><i class="fas fa-envelope"></i> info@clouderasystem.com</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 CloudEra System. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- =====================
+footer
+===================== -->
+
+
+    <script src="about.js"></script>
+</body>
+
+</html>

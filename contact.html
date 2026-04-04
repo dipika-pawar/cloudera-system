@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudEra System | Compact Sidebar</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="top-navbar" id="topNav">
+        <div class="container">
+            <div class="logo-box">
+                <img src="Images/logo.png" alt="CloudEra Logo" class="main-logo">
+                <span class="brand-name">CloudEra <span class="purple-txt">System</span></span>
+            </div>
+            <ul class="desktop-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="#" class="quote-btn">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="floating-trigger" id="scrollToggle">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="side-drawer" id="sideMenu">
+        <div class="drawer-header">
+            <div class="drawer-logo-box">
+                <img src="Images/logo.png" alt="Logo" class="sidebar-logo">
+                <div class="drawer-brand">
+                    <span class="name">CloudEra</span>
+                    <span class="sub-name">System</span>
+                </div>
+            </div>
+            <div class="close-btn" id="closeMenu">&times;</div>
+        </div>
+
+        <ul class="drawer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="drawer-footer">
+            <a href="#" class="quote-btn sidebar-btn">Get a Free Quote</a>
+        </div>
+    </div>
+
+
+    <section class="contact-hero">
+        <div class="bg-blur-circle one"></div>
+        <div class="bg-blur-circle two"></div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="badge">Contact Us</span>
+                <h1 class="animate-text">Get in Touch with <span class="purple-txt">CloudEra System</span></h1>
+                <p class="animate-subtext">
+                    We’d love to hear from you! Whether you have a project idea, business inquiry, or just want to say
+                    hello, feel free to reach out to us.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <section class="cloudera-contact">
+        <div class="contact-wrapper">
+
+            <div class="contact-info-panel fade-up">
+                <span class="mini-badge">Connect With Us</span>
+                <h1 class="display-title">Let’s Start Your <br><span class="purple-txt">Cloud Journey</span></h1>
+                <p class="description-text">Our team is ready to help you navigate the digital landscape with custom
+                    solutions designed for your growth.</p>
+
+                <div class="info-grid-compact">
+                    <div class="info-pill">
+                        <div class="pill-icon"><i data-lucide="map-pin"></i></div>
+                        <p>Pune, Maharashtra, India</p>
+                    </div>
+                    <div class="info-pill">
+                        <div class="pill-icon"><i data-lucide="phone"></i></div>
+                        <p>+91 98765 43210</p>
+                    </div>
+                    <div class="info-pill">
+                        <div class="pill-icon"><i data-lucide="mail"></i></div>
+                        <p>info@clouderasystem.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-panel slide-left">
+                <div class="premium-form-card">
+                    <div class="form-header">
+                        <h2>Send Us a Message</h2>
+                        <p>Get a response within 24 hours.</p>
+                    </div>
+
+                    <form class="cloudera-form-logic">
+                        <div class="input-split">
+                            <input type="text" placeholder="Full Name" required>
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="input-split">
+                            <input type="tel" placeholder="Phone Number">
+                            <select required>
+                                <option value="" disabled selected>Select Subject</option>
+                                <option>Web Development</option>
+                                <option>Cloud Infrastructure</option>
+                                <option>UI/UX Design</option>
+                            </select>
+                        </div>
+                        <textarea placeholder="How can we help you?" rows="5" required></textarea>
+
+                        <button type="submit" class="cloudera-btn">
+                            <span>Send Message</span>
+                            <i data-lucide="send" class="btn-icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cloudera-map-section fade-up">
+        <div class="map-container">
+            <div class="map-header">
+                <div class="map-title-group">
+                    <i data-lucide="map-pin"></i>
+                    <h2>Find Us on <span class="purple-txt">Map</span></h2>
+                </div>
+                <p>Visit our office or schedule a meeting with our team in Mumbai.</p>
+            </div>
+
+            <div class="map-frame-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.393729993303!2d73.73038577496362!3d18.59195066872659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b8f7f0f7e3a7%3A0x8f6d9b6a7e7c9f0!2sHinjawadi%2C%20Pimpri-Chinchwad%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1710000000001!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+                <div class="map-overlay-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Initialize icons for the Map section
+        lucide.createIcons();
+    </script>
+
+
+    <!-- =====================
+footer
+===================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <footer class="main-footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="Images/logo.png" alt="CloudEra Logo" class="logo-img">
+                </div>
+                <p class="footer-desc">
+                    Delivering innovative IT solutions, modern technology services, and reliable digital products to
+                    help businesses grow and succeed in the digital world.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="col-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Technologies</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="col-title">Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Software Development</a></li>
+                    <li><a href="#">Mobile App Development</a></li>
+                    <li><a href="#">Cloud Solutions</a></li>
+                    <li><a href="#">API Integration</a></li>
+                    <li><a href="#">UI / UX Design</a></li>
+                    <li><a href="#">IT Consulting</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="col-title">Contact Us</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra, India</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 9876543210</p>
+                    <p><i class="fas fa-envelope"></i> info@clouderasystem.com</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 CloudEra System. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- =====================
+footer
+===================== -->
+
+
+    <script src="script.js"></script>
+
+
+
+    <script src="contact.js"></script>
+</body>
+
+</html>
