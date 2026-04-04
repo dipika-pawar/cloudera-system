@@ -333,6 +333,7 @@ body {
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
+    margin-top: 20px;
     margin-bottom: 25px;
     animation: fadeInUp 0.8s ease backwards;
 }
