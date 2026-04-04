@@ -348,6 +348,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     display: inline-block;
+    margin-top: 20px;
     margin-bottom: 20px;
     animation: fadeInUp 0.8s ease forwards;
 }
