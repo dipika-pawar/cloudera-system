@@ -339,45 +339,44 @@ VanillaTilt.init(document.querySelectorAll(".wc-card"), {
 //     founder
 //  ========================
 
-// Initialize GSAP ScrollTrigger
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-// Main Heading Animation
-gsap.from(".cloudera-ce-main-header", {
-    scrollTrigger: ".cloudera-ce-founder-wrapper",
-    y: -50,
-    opacity: 0,
-    duration: 1,
-    ease: "power2.out"
-});
+// // Initial Page Load Animations
+// const tl = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: ".cloudera-ce-founder-wrapper",
+//         start: "top 70%",
+//     }
+// });
 
-// Left Content Reveal
-gsap.from(".cloudera-ce-bio-content", {
-    scrollTrigger: ".cloudera-ce-flex-container",
-    x: -100,
-    opacity: 0,
-    duration: 1.2,
-    ease: "power3.out"
-});
+// tl.from(".cloudera-ce-title", { y: -30, opacity: 0, duration: 0.8 })
+//   .from(".cloudera-ce-vision-card", { scale: 0.9, opacity: 0, duration: 1, ease: "back.out(1.7)" }, "-=0.4")
+//   .from(".cloudera-ce-bio-heading", { x: -30, opacity: 0, duration: 0.6 }, "-=0.6")
+//   .from(".cloudera-ce-bio-text", { x: -30, opacity: 0, duration: 0.6 }, "-=0.4")
+//   .from(".cloudera-ce-info-box", { 
+//       y: 20, 
+//       opacity: 0, 
+//       stagger: 0.1, 
+//       duration: 0.5 
+//   }, "-=0.2");
 
-// Right Photo Card Reveal
-gsap.from(".cloudera-ce-visual-wrap", {
-    scrollTrigger: ".cloudera-ce-flex-container",
-    x: 100,
-    opacity: 0,
-    duration: 1.2,
-    delay: 0.2,
-    ease: "power3.out"
-});
+// // Floating animation for particles
+// gsap.to(".ce-particle", {
+//     y: "random(-20, 20)",
+//     x: "random(-20, 20)",
+//     duration: "random(2, 4)",
+//     repeat: -1,
+//     yoyo: true,
+//     ease: "sine.inOut"
+// });
 
-// Initialize 3D Tilt
-VanillaTilt.init(document.querySelector(".cloudera-ce-photo-card"), {
-    max: 15,
-    speed: 400,
-    glare: true,
-    "max-glare": 0.3,
-});
-
+// // Initialize 3D Tilt for the Vision Card
+// VanillaTilt.init(document.querySelector(".cloudera-ce-vision-card"), {
+//     max: 10,
+//     speed: 800,
+//     glare: true,
+//     "max-glare": 0.2,
+// });
 
 // ========================
 //     Company Achievements

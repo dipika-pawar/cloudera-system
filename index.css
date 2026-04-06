@@ -884,7 +884,7 @@ tech-section
     background: rgba(15, 15, 15, 0.7);
     backdrop-filter: blur(20px);
     border: 1px solid var(--border-glass);
-    border-radius: 0 40px 0 40px; /* Futuristic Asymmetric cut */
+    border-radius:40px; /* Futuristic Asymmetric cut */
     padding: 50px 30px;
     position: relative;
     overflow: hidden;
