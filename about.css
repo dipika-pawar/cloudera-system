@@ -1084,7 +1084,6 @@ body {
 /* ========================
     founder
     ======================== */
-
 :root {
     --ce-purple: #a03cbf;
     --ce-blue: #9a1c9e;
@@ -1099,13 +1098,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 100px 20px; /* Added padding for better spacing */
 }
 
 /* --- Heading --- */
 .cloudera-ce-main-header {
     text-align: center;
     margin-bottom: 50px;
-    margin-top: -80px;
 }
 
 .cloudera-ce-tagline {
@@ -1126,14 +1125,6 @@ body {
     background: linear-gradient(135deg, var(--ce-purple), var(--ce-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.cloudera-ce-line {
-    width: 60px;
-    height: 4px;
-    background: var(--ce-purple);
-    margin: 20px auto;
-    border-radius: 10px;
 }
 
 /* --- Centered Layout --- */
@@ -1174,19 +1165,35 @@ body {
 .cloudera-ce-photo-card {
     background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
     border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     border-radius: 40px;
-    padding: 50px 40px;
+    padding: 60px 40px;
     width: 100%;
     max-width: 600px;
     transform-style: preserve-3d;
     box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background Glow inside card */
+.cloudera-ce-photo-card::before {
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    width: 200px;
+    height: 200px;
+    background: var(--ce-purple);
+    filter: blur(100px);
+    opacity: 0.2;
+    pointer-events: none;
 }
 
 .cloudera-ce-quote-icon {
     font-size: 3rem;
     color: var(--ce-purple);
     margin-bottom: 20px;
-    margin-top: -80px;
     opacity: 0.5;
     transform: translateZ(40px);
 }
@@ -1195,36 +1202,41 @@ body {
     font-size: 1.4rem;
     font-style: italic;
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     transform: translateZ(30px);
+    position: relative;
+    z-index: 2;
 }
 
-.cloudera-ce-f-name {
-    font-size: 1.8rem;
-    margin-bottom: 5px;
+/* --- THE HIGHLIGHT SECTION --- */
+.cloudera-ce-details {
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 20px;
+    /* Soft purple shadow background to highlight founder */
+    background: radial-gradient(circle at center, rgba(160, 60, 191, 0.15) 0%, transparent 70%);
+    box-shadow: 0 10px 30px rgba(160, 60, 191, 0.1);
     transform: translateZ(50px);
 }
 
+.cloudera-ce-f-name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    /* Adding a text shadow for extra crispness */
+    text-shadow: 0 0 15px rgba(160, 60, 191, 0.6);
+}
+
 .cloudera-ce-f-role {
-    color: var(--ce-blue);
+    color: white;
     font-weight: 600;
-    margin-bottom: 20px;
-    transform: translateZ(40px);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
 }
 
-.cloudera-ce-socials a {
-    color: #fff;
-    margin: 0 15px;
-    font-size: 1.3rem;
-    transition: 0.3s;
-}
-
-.cloudera-ce-socials a:hover {
-    color: var(--ce-purple);
-    transform: scale(1.2);
-}
-
-/* --- Info Grid --- */
+/* --- Info Grid & Extras --- */
 .cloudera-ce-info-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1252,16 +1264,27 @@ body {
 
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
+    .cloudera-ce-main-header {
+        margin-top: 0;
+    }
+
     .cloudera-ce-info-grid {
         grid-template-columns: 1fr;
     }
     
     .cloudera-ce-photo-card {
         padding: 40px 20px;
+        /* Kept your purple mobile request, but adjusted for better legibility */
+        background: linear-gradient(145deg, #2a0a33, #000000);
     }
 
     .cloudera-ce-quote-text {
         font-size: 1.1rem;
+    }
+    
+    .cloudera-ce-details {
+        padding: 15px 20px;
+        background: rgba(160, 60, 191, 0.1);
     }
 }
 
